@@ -8,14 +8,18 @@ ThreadPoolExecutor(TPE)是Java线程池的核心类，这里通过问问题和�
 # TPEWhy的问题列表
 TPEWhy以问题为引子，为了回答问题翻源码找资料，给出理解和答案。
 以下是问题列表，每一个问题都链接到一个专题详细回答。
+---
 ## 1.为什么不建议使用Executors创建线程池
+---
 ## 2.线程池参数理解
+---
 ### 2.1四种经典线程池，都是什么参数？
 ### 2.2主要使用了哪几种BlockingQueue？
 ### 2.3使用了无界队列，corePoolSize，maximumPoolSize还有用吗？
 ### 2.4corePoolSize，maximumPoolSize和BlockingQueue有什么关系？
 ### 2.5keepAliveTime就是线程最大存活时间吗？
 ### 2.6四种拒绝策略具体作用？
+---
 ## 3.线程池运行的理解
 ### 3.1提交一个新task时，流程是怎样的？ 
 ### 3.2线程池是怎么实现线程“一直运行”的？
@@ -31,9 +35,13 @@ TPEWhy以问题为引子，为了回答问题翻源码找资料，给出理解�
 ### 3.7shutdown和shutdownnow的interrupt策略有何区别，对queue中task，新来的task处理原则有何区别？
 ## 3.8shutdown和shutdownnow一定会触发线程回收吗？
 ## 3.9什么情况下会触发线程的回收？
+---
 ## 4.什么要使用mainLock？
+---
 ## 5.tryTerminate在干嘛？
+---
 ## 6.为什么总要使用final来存锁？
+---
 
 # 其他
 项目萌发于复习笔记，非常口语化和简陋，肯定有很多错误和疏漏之处，欢迎大家批评指正，一起批判它，一起丰富它  
